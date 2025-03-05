@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#my-life">My Life</a></li> 
+        </ul>
+    </nav>
+    <div id="home">
+        <div id="hero">
+            <img src="482285548_423076854195415_854567200231798455_n.jpg" alt="My Photo">
+            <h1>Jelord Xyren C. Bojos</h1>
+            <p>CCS Student | Programmer</p>
+        </div>
+        <div id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Jelord Xyren C. Bojos, a dedicated Computer Science and Information Systems student with a passion for programming and technology. I am currently pursuing my degree at [Your University], where I focus on learning the ins and outs of software development, system analysis, and everything in between. My curiosity drives me to constantly learn, and I'm always eager to take on new challenges to push my limits.
+            </p>
+            <p>
+                My journey into technology began at a young age, with a fascination for how things work and a desire to create. Over the years, this interest evolved into a love for coding and building software solutions. I’m particularly passionate about open-source software and believe in its power to bring communities together to create something meaningful. I regularly contribute to projects on GitHub and enjoy collaborating with others to improve existing tools and build new solutions.
+            </p>
+            <p>
+                I specialize in web development, where I enjoy combining front-end design with back-end logic to create seamless, functional user experiences. I have hands-on experience with various programming languages, including Python, JavaScript, and C++, and am constantly expanding my knowledge of emerging technologies like machine learning and cloud computing. As a student, I actively participate in hackathons and coding challenges, which helps me to apply what I've learned and grow as a developer.
+            </p>
+            <p>
+                Beyond programming, I'm passionate about technology’s role in solving real-world problems. Whether it’s creating an app to streamline everyday tasks or building a website for a non-profit, I believe technology should serve people. I'm also an advocate for lifelong learning, and I always strive to improve both my technical and interpersonal skills.
+            </p>
+            <p>
+                In my free time, you can find me experimenting with new coding projects, exploring tech blogs and podcasts, or working on personal development goals. I'm also a firm believer in the power of mentorship, and I actively seek opportunities to help others in their learning journey, whether it’s offering coding advice or sharing knowledge about open-source contributions.
+            </p>
+            <p>
+                My ultimate goal is to bridge the gap between hardware and software, creating solutions that not only work efficiently but are also accessible and inclusive for everyone. I'm always on the lookout for opportunities to collaborate with like-minded individuals and contribute to exciting new projects. If you’re interested in working together or just want to chat about tech, feel free to reach out!
+            </p>
+        </div>
+
+  
+        <div id="image-gallery">
+            <div id="my-life">
+                <h2>My Life</h2>
+                <p>
+                    This is a brief section where I talk about my personal life, experiences, and interests outside of technology. I believe in balancing my career with hobbies and passions that help me grow as a person.
+                </p>
+                
+            </div>
+            
+            <div class="gallery">
+                <img src="1238yjfhyikhfjas.jpg" alt="Project 1" class="gallery-img" onclick="openModal(this.src)">
+                <img src="356431768_942652607029336_1266301611128721898_n.jpg" alt="Project 2" class="gallery-img" onclick="openModal(this.src)">
+                <img src="462640532_947011464144331_7597306364329571835_n.jpg" alt="Project 3" class="gallery-img" onclick="openModal(this.src)">
+                <img src="463172305_1104187627862811_9198071920223949892_n.jpg" alt="Project 4" class="gallery-img" onclick="openModal(this.src)">
+                <img src="481766877_1381697892843412_1101530161810106442_n.jpg" alt="Project 5" class="gallery-img" onclick="openModal(this.src)">
+                <img src="2312321355.jpg" alt="Project 6" class="gallery-img" onclick="openModal(this.src)">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="image-modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:bojosjelordxyren@gmail.com">bojosjelordxyren@gmail.com</a></p>
+                <p>Phone: <a href="tel:+639543224547">+639 5432 24547</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank" class="icon-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="icon-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer-text">© 2025 Jelord Xyren C. Bojos. All rights reserved.</p>
+    </footer>
+    
+
+    <script>
+    
+        function openModal(imageSrc) {
+            var modal = document.getElementById("image-modal");
+            var modalImg = document.getElementById("modal-img");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+
+       
+        function closeModal() {
+            var modal = document.getElementById("image-modal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
